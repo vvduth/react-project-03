@@ -38,23 +38,25 @@ const Todo = (props) => {
             </button>
         </div>
          :
-        <div className = "row" >
+        <div style={{borderColor: 'black' }} className = "row" >
                 <div className = "column five wide" onDoubleClick = {divDoubleClickHandler}>
-                    <h3 style={{fontSize:"2.2vw" }}className= {"ui header" + (isCompleted ? " green" : "white")} >{value}</h3> 
+                    <h3 style={{fontSize:"2.2vw" }} className= {"ui header" + (isCompleted ? " green" : "white")} >{value}</h3> 
                 </div>
 
                 <div className = "column one wide" onClick={compeleteClickHandler}>
-                    <button className= {"ui button circular icon" + (isCompleted ? " blue" : " green") }>
+                    <button style={{fontSize:"1.5vw" }} className= {"ui button circular icon" + (isCompleted ? " blue" : " green") }>
                         <i className="white check icon"></i>
                     </button>
                 </div>
 
                 <div className = "column one wide">
                     <button 
+                        
                         onClick = {props.remove}
                         className= "ui button circular icon red"
                         style = { { 
-                            marginLeft: '10px'
+                            marginLeft: '10px',
+                            fontSize:"1.5vw"
                         }}>
                         <i className="white remove icon"></i>
                     </button>
