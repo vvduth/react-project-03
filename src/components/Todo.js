@@ -40,7 +40,7 @@ const Todo = (props) => {
          :
         <div className = "row" >
                 <div className = "column five wide" onDoubleClick = {divDoubleClickHandler}>
-                    <h2 className= {"ui header" + (isCompleted ? " green" : "white")} >{value}</h2> 
+                    <h3 style={{fontSize:"2.2vw" }}className= {"ui header" + (isCompleted ? " green" : "white")} >{value}</h3> 
                 </div>
 
                 <div className = "column one wide" onClick={compeleteClickHandler}>

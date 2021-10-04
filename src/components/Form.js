@@ -23,11 +23,11 @@ const Form = (props) => {
                 <div className="row">
                     <div className="column five wide">
                         <input style = {{display: 'block',
-  width: '100%',
-  border:' 1px solid #ccc',
-  font: 'inherit',
-  lineHeight: '1.5rem',
-  padding: '0 0.25rem' }} 
+                                         width: '100%',
+                                        border:' 1px solid #ccc',
+                                        font: 'inherit',
+                                        lineHeight: '1.5rem',
+                                        padding: '0 0.25rem' }} 
                             value = {inputValue}
                             onChange = {inputChangeHandler}
                             type = "text" 
