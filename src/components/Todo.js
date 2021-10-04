@@ -52,7 +52,10 @@ const Todo = (props) => {
                 <div className = "column one wide">
                     <button 
                         onClick = {props.remove}
-                        className= "ui button circular icon red">
+                        className= "ui button circular icon red"
+                        style = { { 
+                            marginLeft: '10px'
+                        }}>
                         <i className="white remove icon"></i>
                     </button>
                 </div>

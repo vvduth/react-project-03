@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import './Form.css'
 
 const Form = (props) => {
 
@@ -21,7 +22,7 @@ const Form = (props) => {
             <div className = "ui grid center aligned">
                 <div className="row">
                     <div className="column five wide">
-                        <input 
+                        <input className="input" 
                             value = {inputValue}
                             onChange = {inputChangeHandler}
                             type = "text" 

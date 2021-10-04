@@ -1,5 +1,4 @@
 import React from "react";
-import Section from "./Section";
 import Todo from "./Todo";
 
 const List = (props) => {
