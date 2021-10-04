@@ -14,7 +14,7 @@ const Form = (props) => {
         if (inputValue.trim().length <= 0 ){
                 return ;
         }
-        props.addForm({title:inputValue , completed: false});
+        props.addForm(inputValue);
         setInputValue('');
     }
     return (

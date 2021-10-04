@@ -20,7 +20,11 @@ const App = () => {
   const [todoList, setTodoList] = useState(list);
 
   const addTodo = (item) => {
-    setTodoList((oldList)=> [...oldList, item])
+    setTodoList((oldList)=> {
+      const updateList = [...oldList];
+      updateList.unshift({title: item, completed: false, id: Math.random().toString() });
+      return updateList;
+    });
   } 
 
   const removeTodo = (id) => {
